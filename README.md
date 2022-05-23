@@ -23,8 +23,18 @@ On macOS, you can install them with Homebrew:
 brew install inkscape optipng scour
 ```
 
+Once you have the apps installed, just run the script:
 ```bash
 sh optimised-favicon-generator.sh input-svg-file.svg
 ```
+
+This creates the optimised favicon files:
+- `apple-touch-icon.png`
+- `favicon.ico`
+- `icon.svg`
+- `icon-192.png`
+- `icon-512.png`
+
+which are the <a aria-label="Read about favicon files for modern browsers" href="https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs">five favicon files needed for wide support in legacy and modern browsers</a>.  More details in the post mentioned above.
 
 Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
