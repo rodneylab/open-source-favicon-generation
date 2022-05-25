@@ -14,7 +14,7 @@ mkdir ${OUTPUT_DIR} 2> /dev/null
 
 # generate optimised SVG
 scour ${SVG_SOURCE} "${OUTPUT_DIR}"/icon.svg --enable-viewboxing --enable-id-stripping \
-  --enable-comment-stripping --shorten-ids --indent=none
+	--enable-comment-stripping --shorten-ids --indent=none
 
 # generate PNGs
 inkscape -h 32 ${SVG_SOURCE} --export-filename "${OUTPUT_DIR}""/favicon_unoptimised.png"
@@ -30,6 +30,6 @@ optipng -o7 -out "${OUTPUT_DIR}""/icon-512.png" "${OUTPUT_DIR}""/icon-512_unopti
 
 # clean up temporary files
 rm "${OUTPUT_DIR}""/favicon_unoptimised.png"
-rm  "${OUTPUT_DIR}""/apple-touch-icon_unoptimised.png"
+rm "${OUTPUT_DIR}""/apple-touch-icon_unoptimised.png"
 rm "${OUTPUT_DIR}""/icon-192_unoptimised.png"
 rm "${OUTPUT_DIR}""/icon-512_unoptimised.png"
